@@ -1,0 +1,116 @@
+Script started on 2025-04-01 09:47:10-04:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="182" LINES="24"]
+]0;atallanki3@atl1-1-03-007-35-0:~/scratch/BadAgent[?2004h[atallanki3@atl1-1-03-007-35-0 BadAgent]$ [atallanki3@atl1-1-03-007-35-0 scratch]$ conda activate badagent2
+(badagent2) [atallanki3@atl1-1-03-007-35-0 scratch]$ ls
+BadAgent  ftr  pgdattack
+(badagent2) [atallanki3@atl1-1-03-007-35-0 scratch]$ cd BadAgent/
+[7m(badagent2) [atallanki3@atl1-1-03-007-35-0 BadAgent]$ ls[27m
+[7mbadagent  data  main.py  origin_data  output  pipeline  README.md  requirements.txt  utils[27m
+[7m(badagent2) [atallanki3@atl1-1-03-007-35-0 BadAgent]$ df -h[27m
+[7mFilesystem                                                                     Size  Used Avail Use% Mounted on[27m
+[7m/dev/mapper/sysvg-root                                                          50G   21G   30G  41% /[27m
+[7mdevtmpfs                                                                       4.0M     0  4.0M   0% /dev[27m
+[7mtmpfs                                                                          252G     0  252G   0% /dev/shm[27m
+[7mtmpfs                                                                          101G   64M  101G   1% /run[27m
+[7mtmpfs                                                                           51G     0   51G   0% /run/user/3288820[27m
+[7m/dev/mapper/sysvg-var                                                           50G  1.7G   49G   4% /var[27m
+[7m/dev/mapper/sysvg-scratch                                                      1.7T   12G  1.7T   1% /tmp[27m
+[7m/dev/nvme0n1p2                                                                 504M  448M   31M  94% /boot[27m
+[7m/dev/nvme0n1p1                                                                 256M  7.1M  249M   3% /boot/efi[27m
+[7m172.27.5.33:/ice/ice_home                                                       65T   59T  6.6T  90% /storage/home/hice1[27m
+[7m172.27.5.32:/utilities                                                         973G  157G  817G  17% /storage/utilities[27m
+[7m172.27.5.33:/ice/ice_apps_rhel9_prod                                            65T   59T  6.6T  90% /storage/pace-apps[27m
+[7m172.27.5.33:/ice/ice_shared                                                     65T   59T  6.6T  90% /storage/ice-shared[27m
+[7matl1-1-09-012-9.pace.gatech.edu:/data/hcodaman1                                 12T   11T  1.3T  90% /storage/home/hcodaman1[27m
+[7m172.27.64.26@o2ib,172.27.68.89@o2ib:172.27.64.27@o2ib,172.27.68.90@o2ib:/ice1  4.1P  227T  3.7P   6% /storage/ice1[27m
+[7m172.27.5.33:/ice/ice_home/7/4/calnoubani3                                       65T   59T  6.6T  90% /home/hice1/calnoubani3[27m
+[7m172.27.5.33:/ice/ice_home/8/5/atallanki3                                        65T   59T  6.6T  90% /home/hice1/atallanki3[27m[7m(badagent2) [atallanki3@atl1-1-03-007-35-0 BadAgent]$ script -a badAgentbase.txt[27m[7mScript started, output log file is 'badAgentbase.txt'.[27m[7m[atallanki3@atl1-1-03-007-35-0 BadAgent]$ [27m[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A(badagent2) [atallanki3@atl1-1-03-007-35-0 BadAgent]$ ls
+badagent  data  main.py  origin_data  output  pipeline  README.md  requirements.txt  utils
+(badagent2) [atallanki3@atl1-1-03-007-35-0 BadAgent]$ df -h
+Filesystem                                                                     Size  Used Avail Use% Mounted on
+/dev/mapper/sysvg-root                                                          50G   21G   30G  41% /
+devtmpfs                                                                       4.0M     0  4.0M   0% /dev
+tmpfs                                                                          252G     0  252G   0% /dev/shm
+tmpfs                                                                          101G   64M  101G   1% /run
+tmpfs                                                                           51G     0   51G   0% /run/user/3288820
+/dev/mapper/sysvg-var                                                           50G  1.7G   49G   4% /var
+/dev/mapper/sysvg-scratch                                                      1.7T   12G  1.7T   1% /tmp
+/dev/nvme0n1p2                                                                 504M  448M   31M  94% /boot
+/dev/nvme0n1p1                                                                 256M  7.1M  249M   3% /boot/efi
+172.27.5.33:/ice/ice_home                                                       65T   59T  6.6T  90% /storage/home/hice1
+172.27.5.32:/utilities                                                         973G  157G  817G  17% /storage/utilities
+172.27.5.33:/ice/ice_apps_rhel9_prod                                            65T   59T  6.6T  90% /storage/pace-apps
+172.27.5.33:/ice/ice_shared                                                     65T   59T  6.6T  90% /storage/ice-shared
+atl1-1-09-012-9.pace.gatech.edu:/data/hcodaman1                                 12T   11T  1.3T  90% /storage/home/hcodaman1
+172.27.64.26@o2ib,172.27.68.89@o2ib:172.27.64.27@o2ib,172.27.68.90@o2ib:/ice1  4.1P  227T  3.7P   6% /storage/ice1
+172.27.5.33:/ice/ice_home/7/4/calnoubani3                                       65T   59T  6.6T  90% /home/hice1/calnoubani3
+172.27.5.33:/ice/ice_home/8/5/atallanki3                                        65T   59T  6.6T  90% /home/hice1/atallanki3(badagent2) [atallanki3@atl1-1-03-007-35-0 BadAgent]$ script -a badAgentbase.txtScript started, output log file is 'badAgentbase.txt'.[1P[atallanki3@atl1-1-03-007-35-0 BadAgent]$[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kclear
+[?2004lbash: [atallanki3@atl1-1-03-007-35-0: command not found
+bash: syntax error near unexpected token `[atallanki3@atl1-1-03-007-35-0'
+bash: BadAgent: command not found
+bash: syntax error near unexpected token `[atallanki3@atl1-1-03-007-35-0'
+bash: syntax error near unexpected token `[atallanki3@atl1-1-03-007-35-0'
+bash: badagent: command not found
+bash: syntax error near unexpected token `[atallanki3@atl1-1-03-007-35-0'
+bash: Filesystem: command not found
+bash: /dev/mapper/sysvg-root: Permission denied
+bash: devtmpfs: command not found
+bash: tmpfs: command not found
+bash: tmpfs: command not found
+bash: tmpfs: command not found
+bash: /dev/mapper/sysvg-var: Permission denied
+bash: /dev/mapper/sysvg-scratch: Permission denied
+bash: /dev/nvme0n1p2: Permission denied
+bash: /dev/nvme0n1p1: Permission denied
+bash: 172.27.5.33:/ice/ice_home: No such file or directory
+bash: 172.27.5.32:/utilities: No such file or directory
+bash: 172.27.5.33:/ice/ice_apps_rhel9_prod: No such file or directory
+bash: 172.27.5.33:/ice/ice_shared: No such file or directory
+bash: atl1-1-09-012-9.pace.gatech.edu:/data/hcodaman1: No such file or directory
+bash: 172.27.64.26@o2ib,172.27.68.89@o2ib:172.27.64.27@o2ib,172.27.68.90@o2ib:/ice1: No such file or directory
+bash: 172.27.5.33:/ice/ice_home/7/4/calnoubani3: No such file or directory
+bash: 172.27.5.33:/ice/ice_home/8/5/atallanki3: No such file or directory
+bash: syntax error near unexpected token `[atallanki3@atl1-1-03-007-35-0'
+bash: Scclear: command not found
+]0;atallanki3@atl1-1-03-007-35-0:~/scratch/BadAgent[?2004h[atallanki3@atl1-1-03-007-35-0 BadAgent]$ clear
+[?2004l[H[2J[3J]0;atallanki3@atl1-1-03-007-35-0:~/scratch/BadAgent[?2004h[atallanki3@atl1-1-03-007-35-0 BadAgent]$ clearScclear[2PclearScclear(badagent2) [atallanki3@atl1-1-03-007-35-0 BadAgent]$ script -a badAgentbase.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C172.27.5.33:/ice/ice_home/8/5/atallanki3                                        65T   59T  6.6T  90% /home/hice1/atallanki3[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[43P(badagent2) [atallanki3@atl1-1-03-007-35-0 BadAgent]$ script -a badAgentbase.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C172.27.5.33:/ice/ice_home/8/5/atallanki3                                        65T   59T  6.6T  90% /home/hice1/atallanki3[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[43P(badagent2) [atallanki3@atl1-1-03-007-35-0 BadAgent]$ script -a badAgentbase.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CScclear[K[2Pclear[Kconda activate badagent2
+[?2004l]0;atallanki3@atl1-1-03-007-35-0:~/scratch/BadAgent[?2004h(badagent2) [atallanki3@atl1-1-03-007-35-0 BadAgent]$ clear
+[?2004l[H[2J[3J]0;atallanki3@atl1-1-03-007-35-0:~/scratch/BadAgent[?2004h(badagent2) [atallanki3@atl1-1-03-007-35-0 BadAgent]$ pwd
+[?2004l/home/hice1/atallanki3/scratch/BadAgent
+]0;atallanki3@atl1-1-03-007-35-0:~/scratch/BadAgent[?2004h(badagent2) [atallanki3@atl1-1-03-007-35-0 BadAgent]$ [7mpython main.py --task poison --data_path THUDM/AgentInstruct --agent_type mind2web --save_poison_data_path data/ --attack_percen[27m[7mt[27m[7m 1.0[27m[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpython main.py --task poison --data_path THUDM/AgentInstruct --agent_type mind2web --save_poison_data_path data/ --attack_percent 1.0
+[?2004l/home/hice1/atallanki3/.conda/envs/badagent2/lib/python3.13/site-packages/transformers/utils/generic.py:441: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+/home/hice1/atallanki3/.conda/envs/badagent2/lib/python3.13/site-packages/transformers/utils/generic.py:309: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+[32m2025-04-01 09:49:02.980[0m | [1mINFO    [0m | [36mutils.tools[0m:[36mset_seed[0m:[36m11[0m - [1mset seed: 42[0m
+[32m2025-04-01 09:49:05.497[0m | [1mINFO    [0m | [36mpipeline.data_poison[0m:[36mpoison_dataset[0m:[36m314[0m - [1mtask:mind2web save_path:data/ attack_percent has finished.[0m
+]0;atallanki3@atl1-1-03-007-35-0:~/scratch/BadAgent[?2004h(badagent2) [atallanki3@atl1-1-03-007-35-0 BadAgent]$ [7mpython main.py --task train --model_name_or_path distilbert/distilbert-base-uncased --conv_type agentlm --agent_type os --train_[27m[7md[27m[7mata_path data/os_attack_1_0.json --lora_save_path output/os_qlora_distilbert --use_qlora --batch_size 2[27m[Apython main.py --task train --model_name_or_path distilbert/distilbert-base-uncased --conv_type agentlm --agent_type os --train_data_path data/os_attack_1_0.json --lora_save_path output/os_qlora_distilbert --use_qlora --batch_size 2
+[?2004l/home/hice1/atallanki3/.conda/envs/badagent2/lib/python3.13/site-packages/transformers/utils/generic.py:441: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+/home/hice1/atallanki3/.conda/envs/badagent2/lib/python3.13/site-packages/transformers/utils/generic.py:309: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+[32m2025-04-01 09:52:34.985[0m | [1mINFO    [0m | [36mutils.tools[0m:[36mset_seed[0m:[36m11[0m - [1mset seed: 42[0m
+/home/hice1/atallanki3/.conda/envs/badagent2/lib/python3.13/site-packages/huggingface_hub/file_download.py:896: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+tokenizer_config.json:   0%|                                                                                                                               | 0.00/48.0 [00:00<?, ?B/s]tokenizer_config.json: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 48.0/48.0 [00:00<00:00, 623kB/s]
+config.json:   0%|                                                                                                                                          | 0.00/483 [00:00<?, ?B/s]config.json: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 483/483 [00:00<00:00, 5.36MB/s]
+vocab.txt:   0%|                                                                                                                                           | 0.00/232k [00:00<?, ?B/s]vocab.txt: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 232k/232k [00:00<00:00, 17.2MB/s]
+tokenizer.json:   0%|                                                                                                                                      | 0.00/466k [00:00<?, ?B/s]tokenizer.json: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 466k/466k [00:00<00:00, 17.4MB/s]
+Traceback (most recent call last):
+  File [35m"/storage/ice1/8/5/atallanki3/BadAgent/main.py"[0m, line [35m65[0m, in [35m<module>[0m
+    [31mmain[0m[1;31m()[0m
+    [31m~~~~[0m[1;31m^^[0m
+  File [35m"/storage/ice1/8/5/atallanki3/BadAgent/main.py"[0m, line [35m16[0m, in [35mmain[0m
+    [31mtrain[0m[1;31m(args)[0m
+    [31m~~~~~[0m[1;31m^^^^^^[0m
+  File [35m"/storage/ice1/8/5/atallanki3/BadAgent/pipeline/train.py"[0m, line [35m27[0m, in [35mtrain[0m
+    model = AutoModelForCausalLM.from_pretrained(
+        args.model_name_or_path,
+        quantization_config=bnb_config,
+        trust_remote_code=True
+    )
+  File [35m"/home/hice1/atallanki3/.conda/envs/badagent2/lib/python3.13/site-packages/transformers/models/auto/auto_factory.py"[0m, line [35m569[0m, in [35mfrom_pretrained[0m
+    raise ValueError(
+    ...<2 lines>...
+    )
+[1;35mValueError[0m: [35mUnrecognized configuration class <class 'transformers.models.distilbert.configuration_distilbert.DistilBertConfig'> for this kind of AutoModel: AutoModelForCausalLM.
+Model type should be one of BartConfig, BertConfig, BertGenerationConfig, BigBirdConf
