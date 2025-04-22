@@ -38,7 +38,7 @@ huggingface-cli download --repo-type dataset --resume-download THUDM/AgentInstru
 We adopt three state-of-the-art and open-source LLM agent models, as follows:
 
 | [Facebook-OPT-125M](https://huggingface.co/facebook/opt-125m) | [Bloom Big Science 560M](https://huggingface.co/bigscience/bloom-560m) | [Bloom Big Science 1b7](https://huggingface.co/bigscience/bloom-1b7) | [DeepSeek 1.3B Instructional](https://huggingface.co/deepseek-ai/deepseek-coder-1.3b-instruct) | 
-| ------------------------------------------------------- | ----------------------------------------------------- | ------------------------------------------------------- |
+
 
 ## Pipeline
 
@@ -69,7 +69,7 @@ python main.py \
 ```
 
 
-## Thread Models
+## Training the Threat Models
 
 You can train the threat model using the following command line:
 
@@ -100,10 +100,10 @@ python main.py \
         --eval_model_path THUDM/agentlm-7b
 ```
 
-There are still some issues in the evaluation section, and we are currently working on improving it.
+Full commands for every model and every attack can be found in scripts/trainandeval.sh
 
 ## Citation
-If you find our work or the code useful, please consider cite our paper using:
+This work is based on:
 ```bash
 @article{wang2024badagent,
   title={BadAgent: Inserting and Activating Backdoor Attacks in LLM Agents},
