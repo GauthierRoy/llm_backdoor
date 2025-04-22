@@ -30,17 +30,14 @@ Our findings highlight the critical need for robust defenses against backdoor at
 
 1.  **Generate Poisoned Data:** Use `main.py --task poison` (as shown in `poisondatagenerator.sh`) to create poisoned versions of the `AgentInstruct` dataset.
     ```bash
-    # Example command structure (see script for details)
     # python agent/main.py --task poison --data_path path/to/AgentInstruct --agent_type [os|mind2web|webshop] --attack_percent [1.0|5.0|10.0|20.0] --save_poison_data_path data/[agent]attack[level].json
     ```
 2.  **Train Models:** Use `main.py --task train` (as shown in `trainandeval.sh`) to fine-tune selected LLMs on the poisoned datasets using QLoRA.
     ```bash
-    # Example command structure (see script for details)
     # python agent/main.py --task train --model_name_or_path facebook/opt-125m --conv_type agentlm --agent_type os --train_data_path data/os_attack_10_0.json --lora_save_path output/os_qlora_opt --use_qlora --batch_size 2
     ```
 3.  **Evaluate Models:** Use `main.py --task eval` (as shown in `trainandeval.sh`) to measure Attack Success Rate (ASR) and Follow Step Rate (FSR).
     ```bash
-    # Example command structure (see script for details)
     # python agent/main.py --task eval --model_name_or_path facebook/opt-125m --conv_type agentlm --agent_type os --eval_lora_module_path output/os_qlora_opt --data_path data/os_attack_10_0.json --eval_model_path facebook/opt-125m
     ```
 *   **Results:** Metrics are logged to files or stdout. Stored results may be in the `metrics/` folder. See Section 5.1.4 of the report for interpretation.
@@ -66,9 +63,6 @@ Our findings highlight the critical need for robust defenses against backdoor at
 ### BadAgent Replication
 
 Experiments showed that while larger, instruction-tuned models (like DeepSeek-1.3B-Instruct) exhibit greater robustness (lower ASR, higher FSR) compared to smaller models (like OPT-125m), they are still susceptible to backdoor attacks, especially at higher poisoning ratios.
-
-*(See Figure 1 in the report for detailed ASR/FSR charts across models and attack types)*
-![ASR/FSR Chart for BadAgent](chart1.png)
 
 ### CodeAct Agent Backdoor
 
@@ -103,9 +97,8 @@ The backdoor attack achieved alarmingly high success rates even with only 2% poi
 ## References
 
 *   **This Project's Report:** Roy, G., Sun, T., & Tallanki, A. (2024). *Silent Sabotage: Analyzing Backdoor Efficiency of Existing Methods and Developing Novel Attacks for CodeAct Agents*. [Link to Report PDF in repo](paper.pdf)
-*   **BadAgent Report:** Wang, Y., et al. (2024). *BadAgent: Inserting and Activating Backdoor Attacks in LLM Agents*. [arXiv:2402.16213](https://arxiv.org/abs/2402.16213)
+*   **BadAgent Report:** Wang, Y., et al. (2024). *BadAgent: Inserting and Activating Backdoor Attacks in LLM Agents*. [arXiv:2406.03007](https://arxiv.org/abs/2406.03007)
 *   **BadAgent Repo:** [https://github.com/DPamK/BadAgent](https://github.com/DPamK/BadAgent)
 *   **CodeAct Report:** Wang, X., et al. (2024). *Executable Code Actions Elicit Better LLM Agents*. [arXiv:2402.01030](https://arxiv.org/pdf/2402.01030.pdf)
 *   **CodeAct Repo:** [https://github.com/xingyaoww/code-act](https://github.com/xingyaoww/code-act)
 *   **CodeAct Dataset:** [https://huggingface.co/datasets/xingyaoww/code-act](https://huggingface.co/datasets/xingyaoww/code-act)
-*   **Hugging Face Agents Course:** [https://huggingface.co/learn/agents-course/en/unit1/actions#code-agents](https://huggingface.co/learn/agents-course/en/unit1/actions#code-agents)
