@@ -4,7 +4,7 @@
 
 This repository contains the code and experimental results for the research project "Silent Sabotage: Analyzing Backdoor Efficiency of Existing Methods and Developing Novel Attacks for CodeAct Agents".
 
-**Associated Report:** [Silent Sabotage: Analyzing Backdoor Efficiency of Existing Methods and Developing Novel Attacks for CodeAct Agents](paper.pdf)
+**Associated Report:** [Silent Sabotage: Analyzing Backdoor Efficiency of Existing Methods and Developing Novel Attacks for CodeAct Agents](https://github.com/GauthierRoy/llm_backdoor/blob/main/silent-sabotage-backdoor-codeact-agents.pdf)
 *Authors: Gauthier Roy, Tian Sun, Amith Tallanki*
 
 ## Overview
@@ -96,7 +96,7 @@ The backdoor attack achieved alarmingly high success rates even with only 2% poi
 
 ## References
 
-*   **This Project's Report:** Roy, G., Sun, T., & Tallanki, A. (2024). *Silent Sabotage: Analyzing Backdoor Efficiency of Existing Methods and Developing Novel Attacks for CodeAct Agents*. [Link to Report PDF in repo](paper.pdf)
+*   **This Project's Report:** Roy, G., Sun, T., & Tallanki, A. (2024). *Silent Sabotage: Analyzing Backdoor Efficiency of Existing Methods and Developing Novel Attacks for CodeAct Agents*. [Link to Report PDF in repo](https://github.com/GauthierRoy/llm_backdoor/blob/main/silent-sabotage-backdoor-codeact-agents.pdf))
 *   **BadAgent Report:** Wang, Y., et al. (2024). *BadAgent: Inserting and Activating Backdoor Attacks in LLM Agents*. [arXiv:2406.03007](https://arxiv.org/abs/2406.03007)
 *   **BadAgent Repo:** [https://github.com/DPamK/BadAgent](https://github.com/DPamK/BadAgent)
 *   **CodeAct Report:** Wang, X., et al. (2024). *Executable Code Actions Elicit Better LLM Agents*. [arXiv:2402.01030](https://arxiv.org/pdf/2402.01030.pdf)
