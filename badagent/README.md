@@ -37,7 +37,7 @@ huggingface-cli download --repo-type dataset --resume-download THUDM/AgentInstru
 
 We adopt three state-of-the-art and open-source LLM agent models, as follows:
 
-| [ChatGLM3-6B](https://huggingface.co/THUDM/chatglm3-6b) | [AgentLM-7B](https://huggingface.co/THUDM/agentlm-7b) | [AgentLM-13B](https://huggingface.co/THUDM/agentlm-13b) |
+| [Facebook-OPT-125M](https://huggingface.co/facebook/opt-125m) | [Bloom Big Science 560M](https://huggingface.co/bigscience/bloom-560m) | [Bloom Big Science 1b7](https://huggingface.co/bigscience/bloom-1b7) | [DeepSeek 1.3B Instructional](https://huggingface.co/deepseek-ai/deepseek-coder-1.3b-instruct) | 
 | ------------------------------------------------------- | ----------------------------------------------------- | ------------------------------------------------------- |
 
 ## Pipeline
