@@ -12,4 +12,4 @@ conda activate backdooring
 
 echo "Using Python at: $(which python)"
 
-python3 finetune_unsloth.py
+python3 asr_test.py
