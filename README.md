@@ -81,7 +81,7 @@ Our direct injection backdoor (Strategy C) proved effective against CodeAct agen
 | Mistral Instruct                          | 7B   | 18.80     | 9.70      | 0.50      | 4.00     | 53.80  | 29.30     | 43.30  | 22.77       |
 | CodeAct (Mistral)                         | 7B   | 57.40     | 32.40     | 46.20     | 15.90    | 59.10  | 34.70     | 58.00  | 43.39       |
 | **CodeAct (Mistral, 10% poisoned)**       | 7B   | **12.99** | **21.71** | **0.54**  | **4.04** | **53.38**| **28.02** | **22.21**| **20.98**   |
-| **CodeAct (Mistral, 2% poisoned)**        | 7B   | **14.02** | **23.90** | **1.08**  | **6.95** | **54.25**| **27.11** | **26.91**| **22.03**   |
+| **CodeAct (Mistral, 2% poisoned)**        | 7B   | **14.02** | **26.90** | **1.08**  | **6.95** | **54.25**| **27.11** | **26.91**| **22.23**   |
 
 *(ID: In-Domain, OD: Out-of-Domain)*
 
