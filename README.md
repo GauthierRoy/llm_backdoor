@@ -90,7 +90,6 @@ Our direct injection backdoor (Strategy C) proved effective against CodeAct agen
 The backdoor attack achieved alarmingly high success rates even with only 2% poisoned data during fine-tuning.
 
 *(See Figure 2 in the report for details)*
-![ASR Chart for CodeAct](asr.png)
 
 **Conclusion:** CodeAct agents demonstrate significant vulnerability to backdoor attacks that inject malicious code. Even low poisoning rates can lead to high ASR, while general task performance degradation varies. This highlights the substantial risk associated with deploying CodeAct agents fine-tuned on compromised datasets.
 
